@@ -14,9 +14,11 @@ export function Header({ activeTab, onTabChange, peopleCount }) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-violet-200">
-              <Clock className="w-5 h-5 text-white" />
-            </div>
+            <img 
+  src="/logo.png" 
+  alt="Logo" 
+  className="w-15 h-15" 
+/>
             <div>
               <h1 className="text-lg font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
                 ShiftBuddy

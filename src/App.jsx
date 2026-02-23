@@ -36,16 +36,6 @@ export function App() {
     loadFirebaseData();
   }, [setEntries]);
 
-  // 2. Handle Seeding Data
-  const handleSeedData = async () => {
-    setLoading(true);
-    await seedDemoData();
-    // Refresh data after seeding
-    const data = await getItems();
-    setEntries(data);
-    setSeeded(true);
-    setLoading(false);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-violet-50/30">
@@ -83,12 +73,7 @@ export function App() {
                 >
                   📝 Submit Shifts
                 </button>
-                <button
-                  onClick={handleSeedData}
-                  className="px-4 py-2 bg-white/20 text-white rounded-xl text-sm font-semibold hover:bg-white/30 transition-colors backdrop-blur"
-                >
-                  🎲 Load Demo Data to Cloud
-                </button>
+                
               </div>
             </div>
           </div>

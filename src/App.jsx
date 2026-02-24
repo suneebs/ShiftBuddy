@@ -50,7 +50,7 @@ export function App() {
         {/* Loading State */}
         {loading && (
           <div className="text-center py-10 text-violet-600">
-            Loading data from cloud...
+            Loading...
           </div>
         )}
 

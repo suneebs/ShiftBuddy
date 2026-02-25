@@ -63,14 +63,14 @@ export function PeopleList() {
               {entries.length} total shift entries tracked
             </p>
           </div>
-          {entries.length > 0 && (
+          {/* {entries.length > 0 && (
             <button
               onClick={() => setShowClearConfirm(true)}
               className="px-3 py-1.5 bg-red-50 text-red-600 text-xs font-medium rounded-lg hover:bg-red-100 transition-colors flex items-center gap-1"
             >
               <Trash2 className="w-3 h-3" /> Clear All
             </button>
-          )}
+          )} */}
         </div>
       </div>
 
@@ -206,7 +206,7 @@ export function PeopleList() {
                     </div>
 
                     {/* Remove Person */}
-                    <button
+                    {/* <button
                       onClick={(e) => {
                         e.stopPropagation();
                         removePerson(name);
@@ -215,7 +215,7 @@ export function PeopleList() {
                       className="mt-4 w-full py-2 text-sm text-red-500 hover:bg-red-50 rounded-lg transition-colors flex items-center justify-center gap-1 border border-red-100"
                     >
                       <Trash2 className="w-3.5 h-3.5" /> Remove {name}
-                    </button>
+                    </button> */}
                   </div>
                 )}
               </div>
